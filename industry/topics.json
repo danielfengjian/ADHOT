@@ -7,13 +7,13 @@
     },
     {
       "key": "field",
-      "name": "领域与渠道",
-      "blurb": "按领域深挖：AI 营销、零售媒体、CTV、户外……"
+      "name": "地区与领域",
+      "blurb": "按地区和领域看：国内、国际、AI 营销、电商与零售媒体……"
     },
     {
       "key": "genre",
       "name": "内容形态",
-      "blurb": "按内容类型浏览：战役、奖项、比稿、财报、报告……"
+      "blurb": "按内容类型浏览：作品、奖项、案例、比稿、人事、报告……"
     }
   ],
   "topics": [
@@ -50,7 +50,7 @@
       "name": "电通",
       "group": "company",
       "entityId": "dentsu",
-      "definition": "电通集团的业务调整、海外业务进展、客户与创意动态。"
+      "definition": "电通集团的业务调整、中国业务进展、客户与创意动态。"
     },
     {
       "slug": "havas",
@@ -60,6 +60,52 @@
       "definition": "哈瓦斯集团的业绩、并购、客户与创意动态。"
     },
     {
+      "slug": "bytedance",
+      "name": "字节跳动 / 巨量引擎",
+      "group": "company",
+      "entityId": "tiktok",
+      "aliases": [
+        "抖音",
+        "TikTok"
+      ],
+      "definition": "巨量引擎、抖音与 TikTok 的广告产品、电商广告、投放规则与平台政策。"
+    },
+    {
+      "slug": "tencent",
+      "name": "腾讯广告",
+      "group": "company",
+      "entityId": "tencent",
+      "aliases": [
+        "微信广告"
+      ],
+      "definition": "腾讯广告与微信生态的广告产品、投放能力与营销玩法。"
+    },
+    {
+      "slug": "alimama",
+      "name": "阿里妈妈",
+      "group": "company",
+      "entityId": "alibaba",
+      "aliases": [
+        "淘宝",
+        "天猫"
+      ],
+      "definition": "阿里妈妈与淘宝天猫的电商广告、营销工具与大促投放变化。"
+    },
+    {
+      "slug": "kuaishou",
+      "name": "快手 / 磁力引擎",
+      "group": "company",
+      "entityId": "kuaishou",
+      "definition": "快手磁力引擎的广告产品、电商广告与营销玩法。"
+    },
+    {
+      "slug": "xiaohongshu",
+      "name": "小红书",
+      "group": "company",
+      "entityId": "xiaohongshu",
+      "definition": "小红书的商业化产品、种草投放与品牌营销玩法。"
+    },
+    {
       "slug": "google",
       "name": "Google / YouTube",
       "group": "company",
@@ -67,7 +113,7 @@
       "aliases": [
         "YouTube"
       ],
-      "definition": "Google 与 YouTube 的广告产品、算法与政策变化，以及相关诉讼与监管进展。"
+      "definition": "Google 与 YouTube 的广告业务重大变化，以及相关诉讼与监管进展。"
     },
     {
       "slug": "meta",
@@ -78,25 +124,7 @@
         "Facebook",
         "Instagram"
       ],
-      "definition": "Meta 旗下 Facebook、Instagram 等平台的广告产品、自动化投放工具与政策变化。"
-    },
-    {
-      "slug": "amazon",
-      "name": "Amazon Ads",
-      "group": "company",
-      "entityId": "amazon",
-      "definition": "亚马逊广告：零售媒体、Prime Video 广告、DSP 与相关合作动态。"
-    },
-    {
-      "slug": "tiktok",
-      "name": "TikTok / 字节跳动",
-      "group": "company",
-      "entityId": "tiktok",
-      "aliases": [
-        "抖音",
-        "巨量引擎"
-      ],
-      "definition": "TikTok、抖音与巨量引擎的广告产品、电商广告、政策与监管进展。"
+      "definition": "Meta 旗下平台的广告业务重大变化与 AI 广告工具。"
     },
     {
       "slug": "cannes-lions",
@@ -106,7 +134,25 @@
       "aliases": [
         "Cannes Lions"
       ],
-      "definition": "戛纳国际创意节的赛制、入围与获奖作品、评审与趋势讨论。"
+      "definition": "戛纳国际创意节的入围与获奖作品、评审与趋势讨论。"
+    },
+    {
+      "slug": "domestic",
+      "name": "国内",
+      "group": "field",
+      "tags": [
+        "国内"
+      ],
+      "definition": "中国市场的全部广告营销动态：作品、案例、行业、平台、研究与品牌出海。"
+    },
+    {
+      "slug": "international",
+      "name": "国际",
+      "group": "field",
+      "tags": [
+        "国际"
+      ],
+      "definition": "国际市场的全部广告营销动态：作品、行业大事与前沿技术。"
     },
     {
       "slug": "ai-marketing",
@@ -139,22 +185,23 @@
     },
     {
       "slug": "retail-media",
-      "name": "零售媒体与电商广告",
+      "name": "电商与零售媒体",
       "group": "field",
       "tags": [
-        "零售媒体",
-        "电商广告"
+        "电商/零售媒体"
       ],
-      "definition": "零售媒体网络与电商广告：亚马逊、沃尔玛、阿里妈妈等平台的广告业务与数据能力。"
+      "definition": "电商广告与零售媒体：阿里妈妈、京东、抖音电商、亚马逊等平台的广告业务与数据能力。"
     },
     {
-      "slug": "ctv",
-      "name": "CTV 与流媒体广告",
+      "slug": "programmatic",
+      "name": "程序化与效果衡量",
       "group": "field",
       "tags": [
-        "CTV/流媒体"
+        "程序化",
+        "效果衡量",
+        "隐私/数据"
       ],
-      "definition": "联网电视与流媒体平台的广告业务、广告格式与媒介采购变化。"
+      "definition": "程序化交易、效果衡量、隐私与数据规则的变化。"
     },
     {
       "slug": "ooh",
@@ -166,53 +213,49 @@
       "definition": "户外与数字户外广告：创意作品、程序化户外与媒体资源变化。"
     },
     {
-      "slug": "programmatic",
-      "name": "程序化与广告技术",
+      "slug": "sports",
+      "name": "体育营销",
       "group": "field",
       "tags": [
-        "程序化",
-        "广告技术"
+        "体育营销"
       ],
-      "definition": "程序化交易、DSP/SSP、供应链透明度与广告技术公司的动态。"
+      "definition": "体育赛事与体育 IP 的品牌营销。"
     },
     {
-      "slug": "measurement",
-      "name": "效果衡量与隐私",
-      "group": "field",
-      "tags": [
-        "效果衡量",
-        "隐私/数据",
-        "品牌安全"
-      ],
-      "definition": "归因与效果衡量、隐私法规、身份标识与品牌安全的变化。"
-    },
-    {
-      "slug": "global-marketing",
-      "name": "出海营销",
-      "group": "field",
-      "tags": [
-        "出海营销"
-      ],
-      "definition": "中国品牌出海的广告投放、本地化创意与海外平台动态。"
-    },
-    {
-      "slug": "campaigns",
-      "name": "广告战役",
+      "slug": "works",
+      "name": "创意作品",
       "group": "genre",
       "tags": [
-        "广告战役",
         "创意作品"
       ],
-      "definition": "新上线的品牌战役与广告作品，看创意本身怎么做。"
+      "definition": "新上线的广告作品与品牌战役，看创意本身怎么做。"
     },
     {
       "slug": "awards",
-      "name": "奖项与评选",
+      "name": "奖项与广告节",
       "group": "genre",
       "tags": [
         "奖项/评选"
       ],
-      "definition": "戛纳、One Show、D&AD、艾菲等奖项的入围与获奖结果。"
+      "definition": "戛纳、One Show、D&AD、长城奖、金投赏等奖项的入围与获奖结果。"
+    },
+    {
+      "slug": "cases",
+      "name": "营销案例",
+      "group": "genre",
+      "tags": [
+        "营销案例"
+      ],
+      "definition": "案例复盘与拆解：品牌做了什么、效果如何、哪些做法可以借鉴。"
+    },
+    {
+      "slug": "advertisers",
+      "name": "广告主动态",
+      "group": "genre",
+      "tags": [
+        "广告主动态"
+      ],
+      "definition": "头部广告主的营销动作、品牌升级与市场负责人变动。"
     },
     {
       "slug": "pitches",
@@ -221,7 +264,16 @@
       "tags": [
         "比稿/客户变动"
       ],
-      "definition": "大客户的比稿、代理商更换与媒介业务归属变化。"
+      "definition": "大客户的比稿、代理商更换与业务归属变化。"
+    },
+    {
+      "slug": "people",
+      "name": "人事变动",
+      "group": "genre",
+      "tags": [
+        "人事变动"
+      ],
+      "definition": "代理商、平台与品牌方的重要人事任命与离职。"
     },
     {
       "slug": "business",
@@ -234,22 +286,40 @@
       "definition": "控股集团与代理商的财报、并购、重组与裁员。"
     },
     {
-      "slug": "people",
-      "name": "人事变动",
+      "slug": "platforms",
+      "name": "平台与广告产品",
       "group": "genre",
       "tags": [
-        "人事变动"
+        "平台/广告产品"
       ],
-      "definition": "代理商、平台与品牌方的重要人事任命与离职。"
+      "definition": "媒体平台的新广告产品、投放规则与政策变化。"
+    },
+    {
+      "slug": "tech",
+      "name": "技术变革",
+      "group": "genre",
+      "tags": [
+        "技术变革"
+      ],
+      "definition": "AI 等新技术给广告行业带来的实质变化。"
     },
     {
       "slug": "reports",
-      "name": "数据与报告",
+      "name": "研究报告",
       "group": "genre",
       "tags": [
-        "数据/报告"
+        "研究报告"
       ],
-      "definition": "广告支出预测、市场份额、消费者调研与行业报告。"
+      "definition": "消费者研究、行业报告与广告市场数据。"
+    },
+    {
+      "slug": "going-global",
+      "name": "品牌出海",
+      "group": "genre",
+      "tags": [
+        "品牌出海"
+      ],
+      "definition": "中国品牌在海外市场的营销、投放与本地化创意。"
     },
     {
       "slug": "policy",
@@ -259,15 +329,6 @@
         "政策/监管"
       ],
       "definition": "广告法规、平台监管、隐私执法与相关诉讼。"
-    },
-    {
-      "slug": "cases",
-      "name": "案例与方法",
-      "group": "genre",
-      "tags": [
-        "案例/方法"
-      ],
-      "definition": "战役复盘、案例拆解与可借鉴的创意、投放方法。"
     },
     {
       "slug": "opinion",

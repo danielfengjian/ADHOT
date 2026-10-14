@@ -10,9 +10,10 @@ export const SELECTION = {
    *   T1 官方一手（官网、官方博客、机构）· T1_5 官方账号、准官方创作者 · T2 媒体与个人
    * 分级 EXCLUDE_MP 以及这里没有列出的分级，不参与精选评分（只进“全部动态”）。
    *
-   * 现在的数字还是 AI 示例站校准出来的，广告行业要用站长自己标注的样本重新校准后再改（见 docs/selection.md）。
+   * T1、T1_5 还是 AI 示例站校准出来的数字；T2 是过渡值（原 76 对广告媒体太高，媒体报道几乎进不了精选）。
+   * 积累一批站长标注的样本后，用 scripts/eval-selection.ts 重新校准（见 docs/selection.md）。
    */
-  thresholds: { T1: 60, T1_5: 65, T2: 76 } as Record<string, number>,
+  thresholds: { T1: 60, T1_5: 65, T2: 65 } as Record<string, number>,
   /**
    * 没入选、但平均分高于这个数的资料，也用精选的写法（内容理解：标题、摘要、推荐理由）来写，
    * 其余用更便宜的“标题摘要翻译”。

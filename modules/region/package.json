@@ -1,0 +1,8 @@
+{
+  "name": "@aihot/region",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./web": "./web.tsx"
+  }
+}

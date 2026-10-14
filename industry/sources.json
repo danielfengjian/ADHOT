@@ -2,26 +2,6 @@
   "$comment": "示范信源：首次启动时导入（scripts/seed.ts），已存在的不会被覆盖。之后在后台“信源”里新建、修改和暂停。字段说明见 docs/customize.md。",
   "sources": [
     {
-      "id": "rss-google-ads-commerce",
-      "name": "Google Ads & Commerce Blog",
-      "kind": "rss",
-      "config": {
-        "feedUrl": "https://blog.google/products/ads-commerce/rss/",
-        "_aihot": {
-          "initialBackfillLimit": 8
-        }
-      },
-      "tier": "T1",
-      "owner_entity_id": "google",
-      "participation_mode": "editorial",
-      "interval_minutes": 180,
-      "tags": [
-        "官方"
-      ],
-      "site_fulltext": false,
-      "syndicate_fulltext": false
-    },
-    {
       "id": "rss-adweek",
       "name": "Adweek",
       "kind": "rss",
@@ -127,6 +107,26 @@
       "kind": "rss",
       "config": {
         "feedUrl": "https://www.digitaling.com/rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": null,
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "rss-meihua",
+      "name": "梅花网",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.meihua.info/feed",
         "_aihot": {
           "initialBackfillLimit": 8
         }
